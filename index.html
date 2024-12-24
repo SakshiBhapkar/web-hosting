@@ -3,31 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal Portfolio</title>
+    <meta name="description" content="Personal portfolio of Sakshi Bhapkar showcasing skills, projects, and experience.">
+    <meta name="author" content="Sakshi Bhapkar">
+    <title>Sakshi- Portfolio</title>
     <style>
-    body
-    {
-        background-color: olivedrab;color: yellow;
-    }
-    h1{text-align: center;}
-</style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .name {
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        header .role {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        header nav ul {
+            margin-top: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            font-size: 1.1em;
+            color: white;
+        }
+
+        header nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Section styling */
+        .section {
+            padding: 60px 0;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .project-card {
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            font-size: 1em;
+            color: #007bff;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        #contact ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
 </head>
 <body>
-    <img src="D:\sakshi bhapkar\PHOTO.jpeg" align="right" height="500px" widht="500px">
-    <h1><u><b>Personal Portfolio</b></u></h1>
-    <h2>Personal Data</h2>
-    <p>
-        <b><U>Hello!<br> I am Sakshi Bhapkar.</U></b><br>I am student of Zeal college of engineering and research.<br>
-    Currently persueing "Bachlor's in engineering with specialiaty in Artificial Intelligence and Data Science."<br>
-</p>
-  
-<h2><u><strong>Education</strong></u></h2>
-<ul style="list-style-type:square;">
-    <li>Completed my 10th std from cbse board.</li>
-    <li>Complted my 12th std from hsc board</li>
-    <li>Scored 89% in cet examination.</li>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="name">Sakshi Bhapkar</h1>
+            <p class="role">Web Developer |  | Programmer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-</ul>
-   
-    </body>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Sakshi Bhapkar, a passionate web developer with expertise in creating responsive and dynamic websites. I believe in writing clean, maintainable code and staying updated with the latest industry trends.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of the project. What technologies were used? What problem did you solve?</p>
+                            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of the project. What technologies were used? What problem did you solve?</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li> CSS</li>
+                <li>JavaScript</li>
+
+                
+                <!-- Add more skills as you like -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch or collaborate on a project, feel free to reach out!</p>
+            <ul>
+                <li>Email: <a href="sakshibhapkar8@gmail.com">sakshibhapkar8@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/Sakshi" target="_blank">linkedin.com/in/Sakshi</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; [2024] Sakshi Bhapkar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
